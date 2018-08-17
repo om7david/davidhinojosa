@@ -1,0 +1,138 @@
+.navbar-default {
+    border: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.20), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    background: url(../img/darkdenim.png);
+    font-family: $heading-text;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    .navbar-nav>.active>a,
+    .navbar-nav>.active>a:hover {
+        background: transparent;
+        color: $accent;
+    }
+    .navbar-toggle {
+        border: none;
+        margin-top: 17px;
+        margin-bottom: 17px;
+        .icon-bar {
+            background-color: $accent;
+        }
+        &:focus,
+        &:hover {
+            background-color: transparent;
+        }
+    }
+    //    .navbar-nav > .active > a{        
+    //        background-color: transparent;
+    //        color: $accent;
+    //    }
+    .nav li {
+        a {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 16px;
+            color: rgb(198, 198, 198);
+            padding-top: 40px;
+            &:focus {
+                color: $primary;
+            }
+            &:hover,
+            &:focus:hover {
+                color: $accent;
+            }
+        }
+    }
+    .navbar-collapse {
+        border-color: inherit;
+    }
+}
+.navbar-fixed-top {
+    z-index: 998;
+    .logo {
+        width: 215px;
+        height: auto;
+        padding: 10px;
+        margin-right: 25px;
+    }
+}
+
+.navbar-default.affix .logo {
+    width: 215px;
+    height: auto;
+    padding: 10px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .navbar-fixed-top .logo {
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+        transition: all .35s;
+        width: 360px;
+        height: auto;
+        padding: 10px;
+    }
+    .navbar-default {
+        border: none;
+        background-color: transparent;
+        background-image: none;
+        box-shadow: none;
+        z-index: 998;
+        .navbar-header .navbar-brand {
+            color: #fff;
+            font-size: 30px;
+            font-family: 'nexa_boldregular', sans-serif;
+            &:hover,
+            &:focus {
+                color: $accent;
+            }
+        }
+        .nav > li > a {
+            &:focus {
+                color: #fff;
+            }
+            &:hover {
+                color: $light;
+            }
+        }
+        &.affix {
+            border: none;
+            background: url(../img/darkdenim.png);
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.20), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+            .navbar-header .navbar-brand {
+                font-size: 28px;
+                color: #fff;
+                &:hover,
+                &:focus {
+                    color: $accent;
+                }
+            }
+            .logo{
+                width: 260px;
+            }
+            .nav > li > a {
+                color: lightgray;
+                box-sizing: border-box;
+                border-bottom: 3px solid transparent;
+                &:hover,
+                &:active {
+                    color: white;
+                    border-bottom: 3px solid $accent;
+                }
+            }
+            .navbar-nav > .active > a {
+                background-color: transparent;
+                color: $light;
+                border-bottom: 3px solid $accent;
+                box-sizing: border-box;
+            }
+            .navbar-nav > li > a {
+                padding: 28px 15px;
+            }
+        }
+    }
+}
