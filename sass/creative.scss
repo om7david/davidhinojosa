@@ -88,6 +88,10 @@ body {
     }
 }
 
+.profile{
+    max-width: 200px;
+}
+
 hr {
     max-width: 50px;
     border-color: $accent;
@@ -292,44 +296,29 @@ header .header-content .header-content-inner {
     }
 }
 
-.flexslider-web,
-.flexslider-mobile {
-    background: transparent;
-    border: none;
-    box-sizing: border-box;
-    position: relative;
-    .flex-direction-nav {
-        a {
-            width: 50px;
-            height: 50px;
-            &:before {
-                color: $accent;
-            }
-        }
-        .flex-next{
-            right: 10px;
-            opacity: 1;
-        }
-        .flex-prev{
-            left: 10px;
-            opacity: 1;
-        }
-    }
-    
-    
-    .flex-control-nav {
-        display: none;
-    }
-    .slides {
-        a img {
-            transition: all 0.2s ease-in-out;
-            box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.6);
-            &:hover {
-                box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6);
-            }
+.carousel-websites .slick-slide {
+   margin: 10px;
+   &:first-child{
+       margin-left: 20px;
+   }
+   
+    img{
+        -webkit-box-shadow: 3px 22px 15px -16px rgba(0,0,0,0.23);
+        -moz-box-shadow: 3px 22px 15px -16px rgba(0,0,0,0.23);
+        box-shadow: 3px 22px 15px -16px rgba(0,0,0,0.23);
+        transition: all .35s ease-in-out;        
+        &:hover{
+            -webkit-box-shadow: 3px 26px 15px -15px rgba(0,0,0,0.32);
+            -moz-box-shadow: 3px 26px 15px -15px rgba(0,0,0,0.32);
+            box-shadow: 3px 26px 15px -15px rgba(0,0,0,0.32);            
         }
     }
 }
+.carousel-mobile{
+    margin-top: 50px;
+}
+
+
 
 .call-to-action h2 {
     margin: 0 auto 20px;
@@ -662,6 +651,8 @@ footer {
     background: transparent;
 }
 
+
+
 /*Responsive====================*/
 
 @media only screen and (max-width: 768px) {
@@ -720,3 +711,5 @@ footer {
 
 @import 'nav.scss';
 @import 'portfolio.scss';
+@import 'slick.scss';
+@import 'slick-theme.scss';

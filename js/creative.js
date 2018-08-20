@@ -47,29 +47,81 @@
     
 })(jQuery); // End of use strict
 $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    });
-$(window).load(function () {
-    $('.flexslider-web').flexslider({
-        animation: "slide",
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 150,
-        itemMargin: 10,
-        minItems: 1,
-        maxItems: 6
-    });
-});
-$(window).load(function () {
-    $('.flexslider-mobile').flexslider({
-        animation: "slide",
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 150,
-        itemMargin: 10,
-        minItems: 1,
-        maxItems: 6
-    });
+    $('[data-toggle="tooltip"]').tooltip()
 });
 
+//Slider
 
+$('.carousel-websites').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: false,
+    centerPadding: '60px',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow:3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+$('.carousel-mobile').slick({
+    centerMode: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    arrows: false,
+    centerPadding: '60px',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow:3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
