@@ -38,6 +38,30 @@ body {
     /* is width and height divided by two */
 }
 
+.lan{
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    opacity: .5;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.goog-te-gadget-simple{
+    white-space: nowrap;
+    background-color: transparent !important;
+    border: none !important;
+    .goog-te-menu-value span{
+        color: white
+    }
+}
+
+.goog-te-gadget{
+    img{
+        border-radius: 50%;
+    }
+}
 .spinner {
     margin: 100px auto 0;
     width: 70px;
@@ -651,6 +675,17 @@ footer {
     background: transparent;
 }
 
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: block;     /* undo display:none          */
+    height: 0;          /* height:0 is also invisible */ 
+    overflow-y: hidden; /* no-overflow                */
+}
+.tab-content > .active,
+.pill-content > .active {
+    height: auto;       /* let the content decide it  */
+} /* bootstrap hack end */
 
 
 /*Responsive====================*/
@@ -667,6 +702,11 @@ footer {
     }
     .bg-secondary {
         text-align: center;
+    }
+    .lan{
+        position: static;
+        text-align: center;
+        padding: 10px;
     }
 }
 

@@ -73,7 +73,7 @@ $('.carousel-websites').slick({
       {
         breakpoint: 600,
         settings: {
-          slidesToShow:3,
+          slidesToShow:5,
           slidesToScroll: 3
         }
       },
@@ -93,7 +93,7 @@ $('.carousel-mobile').slick({
     centerMode: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 5,
     arrows: false,
     centerPadding: '60px',
     responsive: [
