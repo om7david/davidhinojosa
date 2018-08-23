@@ -654,8 +654,12 @@ footer {
   border-bottom: 3px red;
   background: transparent; }
 
+/* line 677, ../sass/creative.scss */
+.with-lan {
+  margin-top: 20px; }
+
 /* bootstrap hack: fix content width inside hidden tabs */
-/* line 679, ../sass/creative.scss */
+/* line 682, ../sass/creative.scss */
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
   display: block;
@@ -665,7 +669,7 @@ footer {
   overflow-y: hidden;
   /* no-overflow                */ }
 
-/* line 685, ../sass/creative.scss */
+/* line 688, ../sass/creative.scss */
 .tab-content > .active,
 .pill-content > .active {
   height: auto;
@@ -674,65 +678,64 @@ footer {
 /* bootstrap hack end */
 /*Responsive====================*/
 @media only screen and (max-width: 768px) {
-  /* line 694, ../sass/creative.scss */
+  /* line 697, ../sass/creative.scss */
   .navbar-default {
     box-shadow: 0 9px 20px rgba(0, 0, 0, 0.06), 0 2px 3px rgba(0, 0, 0, 0.04); }
 
-  /* line 697, ../sass/creative.scss */
+  /* line 700, ../sass/creative.scss */
   #about {
     text-align: center; }
 
-  /* line 700, ../sass/creative.scss */
+  /* line 703, ../sass/creative.scss */
   #services img {
     margin: 0 auto; }
 
-  /* line 703, ../sass/creative.scss */
+  /* line 706, ../sass/creative.scss */
   .bg-secondary {
     text-align: center; }
 
-  /* line 706, ../sass/creative.scss */
+  /* line 709, ../sass/creative.scss */
   .lan {
     position: static;
     text-align: center;
     padding: 10px; } }
 @media only screen and (max-width: 430px) {
-  /* line 714, ../sass/creative.scss */
+  /* line 717, ../sass/creative.scss */
   header .header-content .header-content-inner h1 {
     font-size: 1px; }
 
-  /* line 717, ../sass/creative.scss */
+  /* line 720, ../sass/creative.scss */
   .contact-me {
-    position: fixed;
     display: flex;
     width: 100%;
     padding: 0 10px;
-    top: inherit;
+    top: initial;
     bottom: 0;
     background: #F03624;
     right: initial; }
-    /* line 726, ../sass/creative.scss */
+    /* line 728, ../sass/creative.scss */
     .contact-me a {
       flex-grow: 1;
       border-radius: 0;
       box-shadow: none;
       padding: 5px; }
-      /* line 731, ../sass/creative.scss */
+      /* line 733, ../sass/creative.scss */
       .contact-me a:hover {
         box-shadow: none; }
 
-  /* line 736, ../sass/creative.scss */
+  /* line 738, ../sass/creative.scss */
   footer {
     padding-bottom: 50px; }
 
-  /* line 739, ../sass/creative.scss */
+  /* line 741, ../sass/creative.scss */
   .section-heading {
     font-size: 2.5em; }
 
-  /* line 743, ../sass/creative.scss */
+  /* line 745, ../sass/creative.scss */
   #hosting h2 {
     font-size: 1.7em; }
 
-  /* line 747, ../sass/creative.scss */
+  /* line 749, ../sass/creative.scss */
   .trans {
     bottom: 80px; } }
 /* line 1, ../sass/_nav.scss */

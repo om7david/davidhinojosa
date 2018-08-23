@@ -674,6 +674,9 @@ footer {
     border-bottom: 3px red;
     background: transparent;
 }
+.with-lan{
+    margin-top: 20px;
+}
 
 /* bootstrap hack: fix content width inside hidden tabs */
 .tab-content > .tab-pane,
@@ -715,11 +718,10 @@ footer {
         font-size: 1px;
     }
     .contact-me {
-        position: fixed;
         display: flex;
         width: 100%;
         padding: 0 10px;
-        top: inherit;
+        top: initial;
         bottom: 0;
         background: $accent;
         right: initial;

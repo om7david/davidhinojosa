@@ -56,15 +56,15 @@ $('.carousel-websites').slick({
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 6,
+    slidesToScroll: 3,
     arrows: false,
     centerPadding: '60px',
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 6,
+          slidesToShow: 4,
           slidesToScroll: 3,
           infinite: true,
           dots: true
@@ -73,7 +73,7 @@ $('.carousel-websites').slick({
       {
         breakpoint: 600,
         settings: {
-          slidesToShow:5,
+          slidesToShow:3,
           slidesToScroll: 3
         }
       },
@@ -125,3 +125,18 @@ $('.carousel-mobile').slick({
       // instead of a settings object
     ]
   });
+
+  // if($(div.skiptranslate).attr("style") = false)
+
+
+  //$(".skiptranslate").ready(function(){
+    // href is not blank
+    //console.log("Alerta");
+   //}); 
+    
+//    $("#mainNav").addClass(".with-lan");
+
+//$(".home").on("ready", ".skiptranslate", function(){
+  //console.log("I showed up");   
+//});
+//$( ".skiptranslate:visible" ).addClass(".with-lan");
