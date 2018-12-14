@@ -322,10 +322,6 @@ header .header-content .header-content-inner {
     }
 }
 
-.slick-slider{
-    padding-top:55px;
-}
-
 .slick-slide {
    margin: 5px;
    opacity: .5;
@@ -346,7 +342,6 @@ header .header-content .header-content-inner {
 
 .slick-prev,
 .slick-next{
-    top: 3%;
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -357,11 +352,12 @@ header .header-content .header-content-inner {
 }
 
 .slick-prev{
-    left: 48%;
+    left: 20px;
+    z-index: 3;
 }
 
 .slick-next{
-    right: 48%;
+    right: 20px;
 }
 
 .carousel-websites{
