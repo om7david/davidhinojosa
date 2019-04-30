@@ -845,30 +845,51 @@ footer {
     margin-bottom: 45px; }
 
 /* line 632, ../sass/creative.scss */
+.contact-item {
+  border: 3px solid white;
+  border-radius: 15px;
+  display: block;
+  padding: 5%;
+  background: #F03624;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: all .35 ease-in-out; }
+  /* line 640, ../sass/creative.scss */
+  .contact-item:hover {
+    border: 3px solid white;
+    text-decoration: none;
+    transform: scale(1.05);
+    box-shadow: 0px 14px 12px rgba(0, 0, 0, 0.5); }
+  /* line 646, ../sass/creative.scss */
+  .contact-item .fa {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 25px; }
+
+/* line 652, ../sass/creative.scss */
 .captcha-container {
   margin-bottom: 15px;
   display: flex;
   justify-content: center; }
 
-/* line 638, ../sass/creative.scss */
+/* line 658, ../sass/creative.scss */
 .g-captcha {
   width: 300px;
   margin: 0 auto; }
 
-/* line 643, ../sass/creative.scss */
+/* line 663, ../sass/creative.scss */
 .sub {
   text-transform: uppercase; }
 
-/* line 647, ../sass/creative.scss */
+/* line 667, ../sass/creative.scss */
 .add-padding {
   padding: 0 15%; }
 
-/* line 651, ../sass/creative.scss */
+/* line 671, ../sass/creative.scss */
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0; }
 
-/* line 656, ../sass/creative.scss */
+/* line 676, ../sass/creative.scss */
 .trans {
   position: fixed;
   border-radius: 50px;
@@ -881,52 +902,52 @@ footer {
   width: 30px;
   z-index: 999; }
 
-/* line 669, ../sass/creative.scss */
+/* line 689, ../sass/creative.scss */
 #about {
   background: url(../img/backloop.png) repeat-y;
   background-size: contain; }
 
-/* line 674, ../sass/creative.scss */
+/* line 694, ../sass/creative.scss */
 .space {
   display: block;
   height: 100px; }
 
-/* line 679, ../sass/creative.scss */
+/* line 699, ../sass/creative.scss */
 .add-margin-bottom {
   margin-bottom: 30px; }
 
 /*Tabs=========================*/
-/* line 685, ../sass/creative.scss */
+/* line 705, ../sass/creative.scss */
 .tab-content {
   padding: 45px 0; }
 
-/* line 689, ../sass/creative.scss */
+/* line 709, ../sass/creative.scss */
 .nav-tabs {
   display: flex; }
 
-/* line 693, ../sass/creative.scss */
+/* line 713, ../sass/creative.scss */
 .nav-tabs > li {
   flex-grow: 1;
   text-align: center;
   border-bottom: 1px solid white;
   width: 50%; }
-  /* line 698, ../sass/creative.scss */
+  /* line 718, ../sass/creative.scss */
   .nav-tabs > li.active {
     border-bottom: 1px solid #F03624; }
-  /* line 701, ../sass/creative.scss */
+  /* line 721, ../sass/creative.scss */
   .nav-tabs > li a {
     border: none;
     font-size: 21px;
     text-transform: uppercase;
     color: lightgray; }
 
-/* line 709, ../sass/creative.scss */
+/* line 729, ../sass/creative.scss */
 .nav > li > a:focus,
 .nav > li > a:hover {
   background: transparent;
   border: none; }
 
-/* line 715, ../sass/creative.scss */
+/* line 735, ../sass/creative.scss */
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
@@ -935,12 +956,12 @@ footer {
   border-bottom: 3px red;
   background: transparent; }
 
-/* line 723, ../sass/creative.scss */
+/* line 743, ../sass/creative.scss */
 .with-lan {
   margin-top: 20px; }
 
 /* bootstrap hack: fix content width inside hidden tabs */
-/* line 728, ../sass/creative.scss */
+/* line 748, ../sass/creative.scss */
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
   display: block;
@@ -950,7 +971,7 @@ footer {
   overflow-y: hidden;
   /* no-overflow                */ }
 
-/* line 734, ../sass/creative.scss */
+/* line 754, ../sass/creative.scss */
 .tab-content > .active,
 .pill-content > .active {
   height: auto;
@@ -959,38 +980,38 @@ footer {
 /* bootstrap hack end */
 /*Responsive====================*/
 @media only screen and (max-width: 768px) {
-  /* line 743, ../sass/creative.scss */
+  /* line 763, ../sass/creative.scss */
   .navbar-default {
     box-shadow: 0 9px 20px rgba(0, 0, 0, 0.06), 0 2px 3px rgba(0, 0, 0, 0.04); }
 
-  /* line 746, ../sass/creative.scss */
+  /* line 766, ../sass/creative.scss */
   #about {
     text-align: center; }
 
-  /* line 749, ../sass/creative.scss */
+  /* line 769, ../sass/creative.scss */
   #services img {
     margin: 0 auto; }
 
-  /* line 752, ../sass/creative.scss */
+  /* line 772, ../sass/creative.scss */
   .bg-secondary {
     text-align: center; }
 
-  /* line 755, ../sass/creative.scss */
+  /* line 775, ../sass/creative.scss */
   .lan {
     position: static;
     text-align: center;
     padding: 10px; }
 
-  /* line 761, ../sass/creative.scss */
+  /* line 781, ../sass/creative.scss */
   #about li,
   #about h3 {
     text-align: left; } }
 @media only screen and (max-width: 430px) {
-  /* line 769, ../sass/creative.scss */
+  /* line 789, ../sass/creative.scss */
   header .header-content .header-content-inner h1 {
     font-size: 1px; }
 
-  /* line 772, ../sass/creative.scss */
+  /* line 792, ../sass/creative.scss */
   .contact-me {
     display: flex;
     width: 100%;
@@ -999,29 +1020,29 @@ footer {
     bottom: 0;
     background: #F03624;
     right: initial; }
-    /* line 780, ../sass/creative.scss */
+    /* line 800, ../sass/creative.scss */
     .contact-me a {
       flex-grow: 1;
       border-radius: 0;
       box-shadow: none;
       padding: 5px; }
-      /* line 785, ../sass/creative.scss */
+      /* line 805, ../sass/creative.scss */
       .contact-me a:hover {
         box-shadow: none; }
 
-  /* line 790, ../sass/creative.scss */
+  /* line 810, ../sass/creative.scss */
   footer {
     padding-bottom: 50px; }
 
-  /* line 793, ../sass/creative.scss */
+  /* line 813, ../sass/creative.scss */
   .section-heading {
     font-size: 2.5em; }
 
-  /* line 797, ../sass/creative.scss */
+  /* line 817, ../sass/creative.scss */
   #hosting h2 {
     font-size: 1.7em; }
 
-  /* line 801, ../sass/creative.scss */
+  /* line 821, ../sass/creative.scss */
   .trans {
     bottom: 80px; } }
 /* line 1, ../sass/_nav.scss */
