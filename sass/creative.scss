@@ -325,6 +325,23 @@ header {
     }
 }
 
+.portfolio-nav{
+    padding:20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo-portfolio{
+    max-width: 300px;
+    padding: 10px;
+}
+
 .project-title{
     text-align: center;
     margin-top: 10px;
